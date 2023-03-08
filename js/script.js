@@ -1,4 +1,4 @@
-const cardsWrapper = document.getElementById('card-wrapper')
+const cardsWrapper = document.getElementById('card-wrapper');
 //Array dei membri del gruppo
 const ourTeamArray = [
     NewMember('Wayne Barnett', 'Founder & CEO', 'wayne-barnett-founder-ceo.jpg'),
@@ -27,9 +27,9 @@ for(let i = 0; i < ourTeamArray.length; i++){
 
     createElementAppend('span', 'subtitle', ourTeamArray[i].work, card[i], 1);
 
-
-   
+  
 }
+
 
 
 //-------------------------------------
@@ -55,8 +55,6 @@ function NewMember (name, work, photo){
 
 };
 
-
-
 /** Crea degli elementi con classe e li aggiunge all'elemento padre, il numero è specificabile */
 function createElementAppend (elementoDaCreare, classe, contenuto, elementoGenitore, numeroElementi){
     
@@ -70,4 +68,3 @@ function createElementAppend (elementoDaCreare, classe, contenuto, elementoGenit
 
     }
 }
-
