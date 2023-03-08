@@ -3,3 +3,39 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+main{
+    background: rgb(242, 242, 242);
+    width: 100vw; height:100vh;
+    overflow: hidden;
+  
+}
+
+#card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: 60%;
+
+    margin: 1em auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+
+    width: calc((100% / 3) - (20px * 3 / 2));
+    background: rgb(255, 255, 255);
+    
+}
+
+.img{
+    width: 100%;
+}
+
+.subtitle,
+.title{
+    text-align: center;
+    padding: .3em 0em;
+}
