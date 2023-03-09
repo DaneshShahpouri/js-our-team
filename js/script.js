@@ -36,6 +36,7 @@ for(let i = 0; i < ourTeamArray.length; i++){
 //Anche io, come molti, avevo usato il ciclo 'for in' in fase di milestone senza pusharlo, lo rimetto qui 
 
 for(let i = 0;  i < ourTeamArray.length; i++){
+    console.log('')
     console.log(ourTeamArray[i].name)
     for(let chiave in ourTeamArray[i]){
         console.log(chiave + ' ' + '='+ ' ' +ourTeamArray[i][chiave])
