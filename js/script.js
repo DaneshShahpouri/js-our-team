@@ -7,6 +7,7 @@ const ourTeamArray = [
     NewMember('Angela Lopez', 'Office LockManager', 'angela-lopez-social-media-manager.jpg'),
     NewMember('Scott Estrada', 'Developer', 'scott-estrada-developer.jpg'),
     NewMember('Barbara Ramos', 'Graphic Designer', 'barbara-ramos-graphic-designer.jpg'),
+
 ];
 
 for(let i = 0; i < ourTeamArray.length; i++){
@@ -28,6 +29,17 @@ for(let i = 0; i < ourTeamArray.length; i++){
     createElementAppend('span', 'subtitle', ourTeamArray[i].work, card[i], 1);
 
   
+}
+
+
+// FOR IN      --------
+//Anche io, come molti, avevo usato il ciclo 'for in' in fase di milestone senza pusharlo, lo rimetto qui 
+
+for(let i = 0;  i < ourTeamArray.length; i++){
+    console.log(ourTeamArray[i].name)
+    for(let chiave in ourTeamArray[i]){
+        console.log(chiave + ' ' + '='+ ' ' +ourTeamArray[i][chiave])
+    }
 }
 
 
@@ -67,4 +79,16 @@ function createElementAppend (elementoDaCreare, classe, contenuto, elementoGenit
         elementoGenitore.append(newEl);
 
     }
+}
+
+function inputNewMember(){
+    
+    const inputName = document.getElementById('name');
+    const inputJob = document.getElementById('job');
+    const inputPhoto = document.getElementById('photo');
+    const btnCreateNewMember = document.getElementById('btn-create-new-memeber');
+
+
+
+
 }

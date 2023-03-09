@@ -4,16 +4,14 @@
     box-sizing: border-box;
 }
 
-main{
+body{
     background: rgb(242, 242, 242);
-    width: 100vw; height:100vh;
-    overflow: hidden;
-  
 }
 
 #card-wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 
     width: 60%;
@@ -38,4 +36,15 @@ main{
 .title{
     text-align: center;
     padding: .3em 0em;
+}
+
+.modulo-inserimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    
+    margin-top:2em
 }
